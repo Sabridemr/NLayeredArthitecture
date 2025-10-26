@@ -1,0 +1,14 @@
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\bin\Debug\net8.0\NLayeredArthitecture.Repositories.deps.json
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\bin\Debug\net8.0\NLayeredArthitecture.Repositories.runtimeconfig.json
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\bin\Debug\net8.0\NLayeredArthitecture.Repositories.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\bin\Debug\net8.0\NLayeredArthitecture.Repositories.pdb
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\NLayeredArthitecture.Repositories.csproj.AssemblyReference.cache
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\NLayeredArthitecture.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\NLayeredArthitecture.Repositories.AssemblyInfoInputs.cache
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\NLayeredArthitecture.Repositories.AssemblyInfo.cs
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\NLayeredArthitecture.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\NLayeredArthitecture.Repositories.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\refint\NLayeredArthitecture.Repositories.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\NLayeredArthitecture.Repositories.pdb
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\NLayeredArthitecture.Repositories.genruntimeconfig.cache
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\ref\NLayeredArthitecture.Repositories.dll

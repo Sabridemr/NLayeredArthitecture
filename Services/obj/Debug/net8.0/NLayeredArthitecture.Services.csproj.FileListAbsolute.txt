@@ -1,0 +1,15 @@
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\bin\Debug\net8.0\NLayeredArthitecture.Services.deps.json
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\bin\Debug\net8.0\NLayeredArthitecture.Services.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\bin\Debug\net8.0\NLayeredArthitecture.Services.pdb
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\bin\Debug\net8.0\NLayeredArthitecture.Repositories.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\bin\Debug\net8.0\NLayeredArthitecture.Repositories.pdb
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\NLayeredArthitecture.Services.csproj.AssemblyReference.cache
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\NLayeredArthitecture.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\NLayeredArthitecture.Services.AssemblyInfoInputs.cache
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\NLayeredArthitecture.Services.AssemblyInfo.cs
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\NLayeredArthitecture.Services.csproj.CoreCompileInputs.cache
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\NLayered.5AC057F7.Up2Date
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\NLayeredArthitecture.Services.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\refint\NLayeredArthitecture.Services.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\NLayeredArthitecture.Services.pdb
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\ref\NLayeredArthitecture.Services.dll
