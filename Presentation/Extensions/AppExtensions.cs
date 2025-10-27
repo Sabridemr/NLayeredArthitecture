@@ -11,6 +11,7 @@ namespace NLayeredArthitecture.Presentation
         {
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             return services;
         }
         
