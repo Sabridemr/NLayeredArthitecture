@@ -1,4 +1,6 @@
 using System.Net;
+using System.Runtime.CompilerServices;
+using Microsoft.EntityFrameworkCore;
 using NLayeredArthitecture.Repositories;
 using Repositories.Entities;
 
@@ -19,6 +21,15 @@ namespace NLayeredArthitecture.Services
 
         }
 
+        public async Task<ServiceResult<List<ProductDto>>> GetAllAsync()
+        {
+            var products = await productRepository.GetAll().ToListAsync();
+
+            var productAsDto = products.Select(p => new ProductDto(p.ProductId, p.ProductName, p.Price, p.Stock)).ToList();
+
+            return ServiceResult<List<ProductDto>>.Success(productAsDto);
+            
+        }
 
         public async Task<ServiceResult<ProductDto>> GetProductByIdAsync(int id)
         {
