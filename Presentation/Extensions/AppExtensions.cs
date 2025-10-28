@@ -1,6 +1,8 @@
 using NLayeredArthitecture.Repositories;
 using NLayeredArthitecture.Services;
-using Repositories.Entities;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using System.Reflection;
 
 namespace NLayeredArthitecture.Presentation
 {
@@ -14,10 +16,12 @@ namespace NLayeredArthitecture.Presentation
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             return services;
         }
-        
-         public static IServiceCollection AddServices(this IServiceCollection services)
+
+        public static IServiceCollection AddServices(this IServiceCollection services)
         {
-            services.AddScoped<IProductService , ProductService >();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddFluentValidationAutoValidation();
+            services.AddValidatorsFromAssembly(Assembly.Load("NLayeredArthitecture.Services"));
             return services;
         }
     }

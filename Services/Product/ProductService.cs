@@ -89,6 +89,21 @@ namespace NLayeredArthitecture.Services
             return ServiceResult.Success();
         }
 
+        public async Task<ServiceResult> UpdateStockAsync(int productId , int quantity)
+        {
+            var product = await productRepository.GetByIdAsync(productId);
+            if (product is null)
+            {
+                return ServiceResult.Fail("Product Not Found", HttpStatusCode.NotFound);
+            }
+
+            product.Stock = quantity;
+            productRepository.Update(product);
+            await unitOfWork.SaveChangeAsync();
+            return ServiceResult.Success(HttpStatusCode.NoContent);
+
+
+        }
         public async Task<ServiceResult> DeleteProductAsync(int id)
         {
             var product = await productRepository.GetByIdAsync(id);
@@ -105,4 +120,4 @@ namespace NLayeredArthitecture.Services
         }
 
     }
-}
+} 

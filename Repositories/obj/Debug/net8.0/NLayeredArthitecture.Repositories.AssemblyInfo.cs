@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NLayeredArthitecture.Repositories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42004d5231e71215c99f264f4edd00791350b296")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d26a280e3982bae7a26ca366157702064809973b")]
 [assembly: System.Reflection.AssemblyProductAttribute("NLayeredArthitecture.Repositories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NLayeredArthitecture.Repositories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

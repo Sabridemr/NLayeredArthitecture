@@ -152,3 +152,6 @@ C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\obj
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\obj\Debug\net8.0\NLayeredArthitecture.API.genruntimeconfig.cache
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\obj\Debug\net8.0\ref\NLayeredArthitecture.API.dll
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\obj\Debug\net8.0\NLayeredArthitecture.API.sourcelink.json
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

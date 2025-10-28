@@ -16,6 +16,8 @@ namespace NLayeredArthitecture.Services
 
         Task<ServiceResult> UpdateProductAsync(int id, UpdateProductRequestDto requset);
 
+        Task<ServiceResult> UpdateStockAsync(int productId, int quantity);
+
         Task<ServiceResult> DeleteProductAsync(int id);
     }
 }

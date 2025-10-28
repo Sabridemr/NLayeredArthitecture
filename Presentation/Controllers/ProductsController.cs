@@ -11,7 +11,7 @@ namespace NLayeredArthitecture.Presentation
         [HttpGet]
         public async Task<IActionResult> GetAll() => CreateActionResult(await productService.GetAllAsync());
 
-        [HttpGet("{pageNumber}/{pageSize}")]
+        [HttpGet("{pageNumber:int}/{pageSize:int}")]
         public async Task<IActionResult> GetPagedAll(int pageNumber , int pageSize)=> CreateActionResult(await productService.GetPagedAllListAsync(pageNumber,pageSize));
 
         [HttpGet("{id}")]
@@ -22,6 +22,10 @@ namespace NLayeredArthitecture.Presentation
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, UpdateProductRequestDto request) => CreateActionResult(await productService.UpdateProductAsync(id, request));
+
+        [HttpPatch]
+        public async Task<IActionResult> UpdateStock(int productId, int quantity) => CreateActionResult(await productService.UpdateStockAsync(productId, quantity));
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id) => CreateActionResult(await productService.DeleteProductAsync(id));
