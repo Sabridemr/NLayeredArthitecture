@@ -1,7 +1,6 @@
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using NLayeredArthitecture.Services;
-using RouteAttribute = Microsoft.AspNetCore.Components.RouteAttribute;
 
 namespace NLayeredArthitecture.Presentation
 {

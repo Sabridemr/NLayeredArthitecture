@@ -1,4 +1,5 @@
 using System.Net;
+using System.Text.Json.Serialization;
 
 namespace NLayeredArthitecture.Services
 {
@@ -7,11 +8,11 @@ namespace NLayeredArthitecture.Services
     {
         public T? Data { get; set; }
         public List<string>? ErrorMessage { get; set; }
-
+        [JsonIgnore]
         public bool IsSuccess => ErrorMessage == null || ErrorMessage.Count == 0;
-
+        [JsonIgnore]
         public bool IsFail => !IsSuccess;
-
+        [JsonIgnore]
         public HttpStatusCode Status { get; set; }
 
         public static ServiceResult<T> Success(T data, HttpStatusCode status = HttpStatusCode.OK)
@@ -48,11 +49,11 @@ namespace NLayeredArthitecture.Services
     {
         
         public List<string>? ErrorMessage { get; set; }
-
+        [JsonIgnore]
         public bool IsSuccess => ErrorMessage == null || ErrorMessage.Count == 0;
-
+        [JsonIgnore]
         public bool IsFail => !IsSuccess;
-
+        [JsonIgnore]
         public HttpStatusCode Status { get; set; }
 
         public static ServiceResult Success( HttpStatusCode status = HttpStatusCode.OK)

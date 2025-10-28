@@ -8,6 +8,7 @@ namespace NLayeredArthitecture.Services
         Task<ServiceResult<List<ProductDto>>> GetTopPriceProductsAsync(int count);
 
         Task<ServiceResult<List<ProductDto>>> GetAllAsync();
+        Task<ServiceResult<List<ProductDto>>> GetPagedAllListAsync(int pageNumber, int pageSize);
         
         Task<ServiceResult<ProductDto>> GetProductByIdAsync(int id);
 

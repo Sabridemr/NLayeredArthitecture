@@ -13,3 +13,4 @@ C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Deb
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\refint\NLayeredArthitecture.Services.dll
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\NLayeredArthitecture.Services.pdb
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\ref\NLayeredArthitecture.Services.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Services\obj\Debug\net8.0\NLayeredArthitecture.Services.sourcelink.json

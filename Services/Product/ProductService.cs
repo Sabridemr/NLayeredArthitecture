@@ -28,6 +28,16 @@ namespace NLayeredArthitecture.Services
             var productAsDto = products.Select(p => new ProductDto(p.ProductId, p.ProductName, p.Price, p.Stock)).ToList();
 
             return ServiceResult<List<ProductDto>>.Success(productAsDto);
+
+        }
+
+        public async Task<ServiceResult<List<ProductDto>>> GetPagedAllListAsync(int pageNumber,int pageSize)
+        {
+
+
+            var products = await productRepository.GetAll().Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync();
+            var productAsDto = products.Select(p => new ProductDto(p.ProductId, p.ProductName, p.Price, p.Stock)).ToList();
+            return ServiceResult<List<ProductDto>>.Success(productAsDto);
             
         }
 

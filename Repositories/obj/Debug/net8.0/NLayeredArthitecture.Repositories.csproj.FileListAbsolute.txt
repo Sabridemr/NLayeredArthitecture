@@ -12,3 +12,4 @@ C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\NLayeredArthitecture.Repositories.pdb
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\NLayeredArthitecture.Repositories.genruntimeconfig.cache
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\ref\NLayeredArthitecture.Repositories.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Repositories\obj\Debug\net8.0\NLayeredArthitecture.Repositories.sourcelink.json
