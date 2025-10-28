@@ -10,7 +10,7 @@ namespace NLayeredArthitecture.Presentation
         [HttpGet]
         public async Task<IActionResult> GetAll()=> CreateActionResult(await productService.GetAllAsync());
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id) => CreateActionResult(await productService.GetProductByIdAsync(id));
 
         [HttpPost]
@@ -19,7 +19,7 @@ namespace NLayeredArthitecture.Presentation
         [HttpPut]
         public async Task<IActionResult> Update(int id, UpdateProductRequestDto request) => CreateActionResult(await productService.UpdateProductAsync(id, request));
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id) => CreateActionResult(await productService.DeleteProductAsync(id));
     }
 }

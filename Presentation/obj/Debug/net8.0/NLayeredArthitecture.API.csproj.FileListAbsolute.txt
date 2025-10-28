@@ -151,3 +151,4 @@ C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\obj
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\obj\Debug\net8.0\NLayeredArthitecture.API.pdb
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\obj\Debug\net8.0\NLayeredArthitecture.API.genruntimeconfig.cache
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\obj\Debug\net8.0\ref\NLayeredArthitecture.API.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\obj\Debug\net8.0\NLayeredArthitecture.API.sourcelink.json
