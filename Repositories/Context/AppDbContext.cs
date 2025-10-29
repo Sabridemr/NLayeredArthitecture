@@ -1,5 +1,6 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
+using NLayeredArthitecture.Repositories;
 using Repositories.Entities;
 
 namespace Repositories.Context
@@ -11,7 +12,9 @@ namespace Repositories.Context
             
         }
 
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; } = default!;
+
+        public DbSet<Categories> Categories { get; set; } = default!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

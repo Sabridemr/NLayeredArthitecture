@@ -23,10 +23,13 @@ namespace NLayeredArthitecture.Services
             RuleFor(x => x.Stock)
                .InclusiveBetween(1, 100).WithMessage("Stok adedi 1 ile 100 arasında olmalıdır.");
 
+            RuleFor(x => x.categoryId)
+                .NotNull().WithMessage("Category id si gereklidir")
+                .GreaterThan(0).WithMessage("Product category value greater than zero . ");
 
         }
 
-        
+         
         
 
 

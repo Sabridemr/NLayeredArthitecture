@@ -1,3 +1,5 @@
+using NLayeredArthitecture.Repositories;
+
 namespace Repositories.Entities
 {
     public class Product
@@ -6,6 +8,9 @@ namespace Repositories.Entities
         public string ProductName { get; set; } = null!;
         public decimal Price { get; set; }
         public int Stock { get; set; }
+
+        public int CategoryId { get; set; }
+        public Categories Category { get; set; } = default!;
 
     }
 }

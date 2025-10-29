@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NLayeredArthitecture.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+967618d0fbc55e48cb55e071ca31daf889a9ee66")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5bafa8e3f07ecbc80da34f88d53beb183b4afc2")]
 [assembly: System.Reflection.AssemblyProductAttribute("NLayeredArthitecture.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NLayeredArthitecture.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

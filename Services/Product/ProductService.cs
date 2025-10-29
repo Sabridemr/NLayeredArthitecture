@@ -62,6 +62,7 @@ namespace NLayeredArthitecture.Services
         }
         public async Task<ServiceResult<CreateProductResponseDto>> CreateProductAsync(CreateProductRequestDto request)
         {
+            throw new CriticalException("Kritik seviye bir hata meydana geldi"); 
 
             var anyProduct = await productRepository.Where(x => x.ProductName == request.Name).AnyAsync();
 
@@ -70,13 +71,7 @@ namespace NLayeredArthitecture.Services
                 return ServiceResult<CreateProductResponseDto>.Fail("Ürün ismi veritabanında bulunmaktadır", HttpStatusCode.BadRequest);
             }
 
-
-            var product = new Product()
-            {
-                ProductName = request.Name,
-                Price = request.Price,
-                Stock = request.Stock
-            };
+            var product = mapper.Map<Product>(request);
 
             await productRepository.AddAsync(product);
             await unitOfWork.SaveChangeAsync();
@@ -90,6 +85,13 @@ namespace NLayeredArthitecture.Services
             if (product is null)
             {
                 return ServiceResult.Fail("Product not found", HttpStatusCode.NotFound);
+            }
+
+            var isProductNameExist = await productRepository.Where(x => x.ProductName == requset.Name).AnyAsync();
+
+            if (isProductNameExist)
+            {
+                return ServiceResult.Fail("ürün ismi veritabanında bulunmaktadır",HttpStatusCode.BadRequest );
             }
 
             product.ProductName = requset.Name;
@@ -108,7 +110,7 @@ namespace NLayeredArthitecture.Services
             {
                 return ServiceResult.Fail("Product Not Found", HttpStatusCode.NotFound);
             }
-
+            
             product.Stock = quantity;
             productRepository.Update(product);
             await unitOfWork.SaveChangeAsync();
