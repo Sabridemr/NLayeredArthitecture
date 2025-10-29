@@ -1,5 +1,5 @@
 using System.Net;
-using System.Runtime.CompilerServices;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using NLayeredArthitecture.Repositories;
 using Repositories.Entities;
@@ -8,7 +8,7 @@ using Repositories.Entities;
 
 namespace NLayeredArthitecture.Services
 {
-    public class ProductService(IProductRepository productRepository , IUnitOfWork unitOfWork) : IProductService
+    public class ProductService(IProductRepository productRepository , IUnitOfWork unitOfWork , IMapper mapper) : IProductService
     {
         public async Task<ServiceResult<List<ProductDto>>> GetTopPriceProductsAsync(int count)
         {
@@ -20,27 +20,30 @@ namespace NLayeredArthitecture.Services
             };
 
         }
-
         public async Task<ServiceResult<List<ProductDto>>> GetAllAsync()
         {
             var products = await productRepository.GetAll().ToListAsync();
 
-            var productAsDto = products.Select(p => new ProductDto(p.ProductId, p.ProductName, p.Price, p.Stock)).ToList();
+            // var productAsDto = products.Select(p => new ProductDto(p.ProductId, p.ProductName, p.Price, p.Stock)).ToList();
+
+            var productAsDto = mapper.Map<List<ProductDto>>(products);
 
             return ServiceResult<List<ProductDto>>.Success(productAsDto);
 
         }
-
         public async Task<ServiceResult<List<ProductDto>>> GetPagedAllListAsync(int pageNumber,int pageSize)
         {
 
 
             var products = await productRepository.GetAll().Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync();
-            var productAsDto = products.Select(p => new ProductDto(p.ProductId, p.ProductName, p.Price, p.Stock)).ToList();
+
+            //var productAsDto = products.Select(p => new ProductDto(p.ProductId, p.ProductName, p.Price, p.Stock)).ToList();
+
+            var productAsDto = mapper.Map<List<ProductDto>>(products);
+
             return ServiceResult<List<ProductDto>>.Success(productAsDto);
             
         }
-
         public async Task<ServiceResult<ProductDto>> GetProductByIdAsync(int id)
         {
             var product = await productRepository.GetByIdAsync(id);
@@ -50,13 +53,24 @@ namespace NLayeredArthitecture.Services
                 return ServiceResult<ProductDto>.Fail("Product not found", HttpStatusCode.NotFound);
             }
 
-            var productAsDto = new ProductDto(product.ProductId, product.ProductName, product.Price, product.Stock);
+            //var productAsDto = new ProductDto(product.ProductId, product.ProductName, product.Price, product.Stock);
+
+            var productAsDto = mapper.Map<ProductDto>(product);
+
             return ServiceResult<ProductDto>.Success(productAsDto!);
 
         }
-
         public async Task<ServiceResult<CreateProductResponseDto>> CreateProductAsync(CreateProductRequestDto request)
         {
+
+            var anyProduct = await productRepository.Where(x => x.ProductName == request.Name).AnyAsync();
+
+            if (anyProduct)
+            {
+                return ServiceResult<CreateProductResponseDto>.Fail("Ürün ismi veritabanında bulunmaktadır", HttpStatusCode.BadRequest);
+            }
+
+
             var product = new Product()
             {
                 ProductName = request.Name,
@@ -69,7 +83,6 @@ namespace NLayeredArthitecture.Services
             return ServiceResult<CreateProductResponseDto>.Success(new CreateProductResponseDto(product.ProductId));
 
         }
-
         public async Task<ServiceResult> UpdateProductAsync(int id, UpdateProductRequestDto requset)
         {
             var product = await productRepository.GetByIdAsync(id);
@@ -88,7 +101,6 @@ namespace NLayeredArthitecture.Services
 
             return ServiceResult.Success();
         }
-
         public async Task<ServiceResult> UpdateStockAsync(int productId , int quantity)
         {
             var product = await productRepository.GetByIdAsync(productId);

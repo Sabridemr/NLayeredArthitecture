@@ -22,6 +22,7 @@ namespace NLayeredArthitecture.Presentation
             services.AddScoped<IProductService, ProductService>();
             services.AddFluentValidationAutoValidation();
             services.AddValidatorsFromAssembly(Assembly.Load("NLayeredArthitecture.Services"));
+            services.AddAutoMapper(Assembly.Load("NLayeredArthitecture.Services"));
             return services;
         }
     }

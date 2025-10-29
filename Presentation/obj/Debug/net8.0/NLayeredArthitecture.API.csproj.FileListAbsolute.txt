@@ -155,3 +155,4 @@ C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\obj
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\safvc\Desktop\Asp.NetArthitecture\NLayeredArthitecture\Presentation\bin\Debug\net8.0\AutoMapper.dll

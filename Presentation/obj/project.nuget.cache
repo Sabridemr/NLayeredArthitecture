@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QoeDhYy1nYA=",
+  "dgSpecHash": "bINtpyjKJOI=",
   "success": true,
   "projectFilePath": "C:\\Users\\safvc\\Desktop\\Asp.NetArthitecture\\NLayeredArthitecture\\Presentation\\NLayeredArthitecture.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\safvc\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\safvc\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\safvc\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\safvc\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
