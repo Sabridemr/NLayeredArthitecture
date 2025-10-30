@@ -2,7 +2,7 @@ using NLayeredArthitecture.Repositories;
 
 namespace Repositories.Entities
 {
-    public class Product
+    public class Product  : IAuditEntity
     {
         public int ProductId { get; set; }
         public string ProductName { get; set; } = null!;
@@ -11,6 +11,7 @@ namespace Repositories.Entities
 
         public int CategoryId { get; set; }
         public Categories Category { get; set; } = default!;
-
+        public DateTime Created { get; set; }
+        public DateTime? Updated { get; set; }
     }
 }

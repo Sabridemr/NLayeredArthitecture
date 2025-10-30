@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NLayeredArthitecture.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5bafa8e3f07ecbc80da34f88d53beb183b4afc2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98f6a8fa25811382409c5cbb91e1ab6904c3ac2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("NLayeredArthitecture.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NLayeredArthitecture.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

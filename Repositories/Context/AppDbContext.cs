@@ -22,5 +22,6 @@ namespace Repositories.Context
             base.OnModelCreating(modelBuilder);
         }
 
+        
     }
 }
